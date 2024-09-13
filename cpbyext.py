@@ -38,6 +38,7 @@ def main():
                         myzip.write(file_path, arcname=arcname)
 
             shutil.rmtree(temp_dir)
+            print(f"Files are copied to {zip_file_name}.")
 
 if __name__ == "__main__":
     main()
