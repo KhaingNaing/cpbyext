@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpbyext"
+version = "1.0.0"
+description = "recursively copy all files of given extension(s) and output a zip file"
+readme = "README.md"
+authors = [{ name = "Khaing Myat Noe Naing", email = "kmyatnoe7889@gmail.com" }]
+# license = {}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = []
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pip-tools"]
+
+[project.urls]
+Homepage = "https://github.com/khaingnaing/cpbyext"
+
+[project.scripts]
+cpbyext = "cpbyext:main"
