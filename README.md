@@ -20,8 +20,12 @@ python -m cpbyext
     ```bash
     docker image pull 
     ```
-4. Execute Image:
+4. Navigate to the Directory: Change to the directory where you want to recursively copy files:
+
     ```bash
-    docker container run -d -v $(pwd): 
+    cd /path/to/directory
+5. Execute Image:
+    ```bash
+    docker container run -d -v $(pwd):/zone 
     ```
 
