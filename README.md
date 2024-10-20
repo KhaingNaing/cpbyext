@@ -4,7 +4,7 @@ This repo contains code that can recursively copy files with specified extension
 # Execution Using Python
 Clone the repository and run the code using the following command:
 ```bash
-python -m cpbyext
+python -m cpbyext <ext1> <ext2>
 ```
 
 # Using Docker Image 
@@ -18,7 +18,7 @@ python -m cpbyext
     ```
 3. Pull Image:
     ```bash
-    docker image pull 
+    docker image pull khaing1226/cpbyext
     ```
 4. Navigate to the Directory: Change to the directory where you want to recursively copy files:
 
@@ -26,6 +26,9 @@ python -m cpbyext
     cd /path/to/directory
 5. Execute Image:
     ```bash
-    docker container run -d -v $(pwd):/zone 
+    docker container run --rm -d -v $(pwd):/zone khaing1226/cpbyext <ext1> <ext2>
     ```
+
+**Note**
+Replace `<ext1>` with the file extension that you want to copy recursively.  
 
